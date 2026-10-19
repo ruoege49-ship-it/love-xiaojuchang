@@ -1,0 +1,12 @@
+{
+  "id": "interlude-theatre",
+  "display_name": "love小剧场",
+  "description": "读取酒馆角色与世界书创作小剧场，在独立阅读页查看，支持收藏、续写和记录恢复。",
+  "loading_order": 120,
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Zeya",
+  "version": "0.10.0",
+  "minimum_client_version": "1.14.0",
+  "auto_update": false
+}

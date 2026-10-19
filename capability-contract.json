@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "minimum": {
+    "sillytavern": "1.14.0",
+    "tavern-helper": null,
+    "provider": null
+  },
+  "requirements": [
+    {
+      "id": "host-context",
+      "owner": "sillytavern",
+      "symbol": "SillyTavern.getContext",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "extension-settings",
+      "owner": "sillytavern",
+      "symbol": "context.extensionSettings",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "settings-save",
+      "owner": "sillytavern",
+      "symbol": "context.saveSettingsDebounced",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "raw-generation",
+      "owner": "sillytavern",
+      "symbol": "context.generateRaw",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "current-chat",
+      "owner": "sillytavern",
+      "symbol": "context.chat",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "character-card-fields",
+      "owner": "sillytavern",
+      "symbol": "context.getCharacterCardFields",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "prompt-macro-substitution",
+      "owner": "sillytavern",
+      "symbol": "context.substituteParams",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "message-render",
+      "owner": "sillytavern",
+      "symbol": "context.addOneMessage",
+      "required": false,
+      "fallback": "Disable manual chat writes; keep workbench available."
+    },
+    {
+      "id": "chat-save",
+      "owner": "sillytavern",
+      "symbol": "context.saveChat",
+      "required": false,
+      "fallback": "Disable manual chat writes."
+    },
+    {
+      "id": "save-readback-headers",
+      "owner": "sillytavern",
+      "symbol": "context.getRequestHeaders",
+      "required": false,
+      "fallback": "Disable manual chat writes."
+    },
+    {
+      "id": "work-storage",
+      "owner": "browser",
+      "symbol": "indexedDB",
+      "required": true,
+      "fallback": "Keep generated text visible and allow HTML download; report failed persistence."
+    }
+  ]
+}
